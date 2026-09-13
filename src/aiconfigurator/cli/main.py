@@ -590,7 +590,7 @@ def _add_default_mode_arguments(parser):
         choices=["deepep_moe", "megamoe"],
         default=None,
         help="Explicit MoE backend. Use 'megamoe' to model DeepSeek-V4 or Kimi-K3 MegaMoE on Blackwell "
-        "(SGLang on all supported systems; vLLM packaged on gb300 @ 0.27.0). "
+        "(DeepSeek-V4 on Blackwell SGLang; Kimi-K3 on b200_sxm SGLang + gb300 vLLM 0.27.0). "
         "'deepep_moe' is deprecated and ignored (large-EP is explored automatically from data coverage).",
     )
     _add_attention_backend_argument(parser)
@@ -766,7 +766,7 @@ def _add_recommend_mode_arguments(parser):
         choices=["deepep_moe", "megamoe"],
         default=None,
         help="Explicit MoE backend. Use 'megamoe' to model DeepSeek-V4 or Kimi-K3 MegaMoE on Blackwell "
-        "(SGLang on all supported systems; vLLM packaged on gb300 @ 0.27.0). "
+        "(DeepSeek-V4 on Blackwell SGLang; Kimi-K3 on b200_sxm SGLang + gb300 vLLM 0.27.0). "
         "'deepep_moe' is deprecated and ignored (large-EP is explored automatically from data coverage).",
     )
     _add_attention_backend_argument(parser)
@@ -1244,7 +1244,7 @@ def _add_estimate_mode_arguments(parser):
         choices=["deepep_moe", "megamoe"],
         default=None,
         help="Explicit MoE backend. Use 'megamoe' to model DeepSeek-V4 or Kimi-K3 MegaMoE on Blackwell "
-        "(SGLang on all supported systems; vLLM packaged on gb300 @ 0.27.0). "
+        "(DeepSeek-V4 on Blackwell SGLang; Kimi-K3 on b200_sxm SGLang + gb300 vLLM 0.27.0). "
         "'deepep_moe' is deprecated and ignored (large-EP is explored automatically from data coverage).",
     )
     parser.add_argument(

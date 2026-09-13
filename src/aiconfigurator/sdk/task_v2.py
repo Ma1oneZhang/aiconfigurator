@@ -188,8 +188,8 @@ _DEEPSEEK_V4_MEGAMOE_SUPPORTED_MODELS = {
     "sgl-project/DeepSeek-V4-Pro-FP8",
 }
 
-# MegaMoE (Kimi-K3) — only this checkpoint has packaged perf data (gb300:
-# sglang 0.5.10/0.5.16-reused + vllm 0.27.0; b200_sxm: sglang 0.5.16).
+# MegaMoE (Kimi-K3) — only this checkpoint has packaged perf data (b200_sxm:
+# sglang 0.5.16; gb300: vllm 0.27.0).
 # Checked via architecture identity (helpers._is_kimi_k3_checkpoint), so local
 # offline checkpoint mounts qualify the same way the hub id does.
 
